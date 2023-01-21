@@ -2,6 +2,7 @@ package design.alberton;
 
 import com.formdev.flatlaf.FlatIntelliJLaf;
 import com.formdev.flatlaf.FlatLaf;
+import design.alberton.view.SolarAppImpl;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,6 +18,7 @@ public class Start {
     public static void main(String[] args) {
         setDefaultUncaughtExceptionHandler((t, e) -> handleException(e));
         createLookAndFeel();
+        new SolarAppImpl().start();
     }
 
     public static void createLookAndFeel() {
