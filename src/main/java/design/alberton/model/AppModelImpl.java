@@ -1,16 +1,29 @@
 package design.alberton.model;
 
+import java.util.List;
+
 public class AppModelImpl implements AppModel {
 
-    private Integer seed = 0;
+    private int seed = -1;
+    private List<String> mapping;
 
     @Override
-    public void setSeed(Integer seed) {
+    public int getSeed() {
+        return seed;
+    }
+
+    @Override
+    public void setSeed(int seed) {
         this.seed = seed;
     }
 
     @Override
-    public Integer getSeed() {
-        return seed;
+    public List<String> getMapping() {
+        return mapping;
+    }
+
+    @Override
+    public void setMapping(List<String> mapping) {
+        this.mapping = mapping;
     }
 }

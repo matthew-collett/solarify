@@ -7,8 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Random;
 
-import static java.awt.BorderLayout.*;
-import static java.lang.Integer.*;
+import static java.awt.BorderLayout.NORTH;
+import static java.awt.BorderLayout.SOUTH;
 import static java.lang.String.format;
 import static javax.swing.SwingConstants.CENTER;
 
@@ -46,7 +46,7 @@ public class SeedView extends JPanel {
 
         add(buttonPanel, SOUTH);
 
-        if ((app.getModel().getSeed() == null) ) {
+        if ((app.getModel().getSeed() == 0)) {
             errLabel.setText("Invalid Value for Seed");
             errLabel.setForeground(new Color(0xff4444));
             seedField.putClientProperty("JComponent.outline", "error");

@@ -1,14 +1,16 @@
 package design.alberton.controller;
 
+import design.alberton.controller.helper.ExcelHelper;
 import design.alberton.model.AppModel;
 import design.alberton.view.ResultView;
-import design.alberton.view.SeedView;
 import design.alberton.view.SolarApp;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
 
+import static design.alberton.controller.helper.PathHelper.getDirectoryPath;
 import static java.lang.Integer.parseInt;
 
 public class SeedAction implements ActionListener {
@@ -24,20 +26,15 @@ public class SeedAction implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
         final AppModel model = app.getModel();
-        final String seed = seedField.getText();
+        model.setSeed(parseInt(seedField.getText()));
 
-        if (parseInt(seed) == 4) {
-            model.setSeed(parseInt(seed));
-            app.setView(new ResultView(app));
+        final List<String> mapping = ExcelHelper.readFile(getDirectoryPath(getClass()).resolve("data.xlsx"));
 
-        } else {
-            model.setSeed(null);
-            app.setView(new SeedView(app));
-        }
+        model.setMapping(mapping);
 
-        System.out.println(model.getSeed());
+        mapping.forEach(System.out::println);
 
+        app.setView(new ResultView(app));
     }
 }
