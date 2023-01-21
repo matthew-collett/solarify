@@ -11,5 +11,5 @@ These instructions will explain how to run the project on your local machine
 
 ## Usage
 
-To find the optimal solar panel/battery configuration, run `main.py` with `data.txt` as the data file in the same directory
+To find the optimal solar panel/battery configuration, run `main.py` with `output.txt` as the data file in the same directory
 
