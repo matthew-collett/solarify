@@ -11,7 +11,6 @@ import java.awt.event.ActionListener;
 import java.util.List;
 
 import static design.alberton.controller.helper.PathHelper.getDirectoryPath;
-import static java.lang.Integer.parseInt;
 
 public class SeedAction implements ActionListener {
 
@@ -27,7 +26,7 @@ public class SeedAction implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         final AppModel model = app.getModel();
-        model.setSeed(parseInt(seedField.getText()));
+        model.setSeed(seedField.getText());
 
         final List<String> mapping = ExcelHelper.readFile(getDirectoryPath(getClass()).resolve("data.xlsx"));
 

@@ -4,9 +4,9 @@ import java.util.List;
 
 public interface AppModel {
 
-    void setSeed(final int seed);
+    void setSeed(final String seed);
 
-    int getSeed();
+    String getSeed();
 
     void setMapping(final List<String> mapping);
 

@@ -9,7 +9,8 @@ import java.net.URL;
 
 import static java.util.Objects.nonNull;
 
-public class SolarAppImpl extends SolarApp {
+public class
+SolarAppImpl extends SolarApp {
 
     private final AppModel model;
 

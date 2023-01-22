@@ -45,13 +45,6 @@ public class SeedView extends JPanel {
         buttonPanel.add(errLabel, SOUTH);
 
         add(buttonPanel, SOUTH);
-
-        if ((app.getModel().getSeed() == 0)) {
-            errLabel.setText("Invalid Value for Seed");
-            errLabel.setForeground(new Color(0xff4444));
-            seedField.putClientProperty("JComponent.outline", "error");
-
-        }
     }
 
     @Override

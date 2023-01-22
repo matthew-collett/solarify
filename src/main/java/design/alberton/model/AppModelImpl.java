@@ -4,16 +4,16 @@ import java.util.List;
 
 public class AppModelImpl implements AppModel {
 
-    private int seed = -1;
+    private String seed = "";
     private List<String> mapping;
 
     @Override
-    public int getSeed() {
+    public String getSeed() {
         return seed;
     }
 
     @Override
-    public void setSeed(int seed) {
+    public void setSeed(String seed) {
         this.seed = seed;
     }
 
