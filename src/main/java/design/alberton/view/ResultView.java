@@ -4,11 +4,14 @@ import design.alberton.view.components.HeaderPanel;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
 import static java.awt.BorderLayout.*;
+import static java.lang.Math.round;
 import static java.lang.String.format;
+import static java.util.Arrays.stream;
 import static java.util.stream.IntStream.range;
 
 public class ResultView extends JPanel {
@@ -49,8 +52,14 @@ public class ResultView extends JPanel {
         solarTable.setTableHeader(null);
         solarTable.setBackground(new Color(0xfaf9f6));
         solarTable.setRowHeight(9);
-        range(0, solarTable.getColumnModel().getColumnCount()).forEach(i -> solarTable.getColumnModel().getColumn(i).setMaxWidth(2));
+        range(0, solarTable.getColumnModel().getColumnCount()).forEach(i -> solarTable.getColumnModel().getColumn(i).setMaxWidth(1));
 
+
+        final List<Double[]> coordList = mapping.stream().map(e -> stream((e.substring(1, e.length() - 1).split(", "))).map(Double::valueOf).toArray(Double[]::new)).toList();
+
+        coordList.forEach(e -> System.out.println(Arrays.toString(e)));
+
+        coordList.forEach(e -> solarTable.setValueAt('x', (int) round(e[1]), (int) round(e[0])));
 
         int i = 0;
         while (i < 9) {
