@@ -1,4 +1,4 @@
-<img src="solarifyLogo.png" />
+<img src="src/main/resources/assets/logo.svg" style="width: 250px;"/>
 
 
 # Solarify
