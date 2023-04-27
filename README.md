@@ -1,3 +1,5 @@
+# <p align="center">AEC 2023 — Atlantic Engineering Competition — Halifax, NB</p>
+
 <p align="center"><img src="src/main/resources/assets/logo.svg" style="width: 300px;"/></p>
 
 # Solarify
@@ -5,12 +7,11 @@ Solarify is a software designed to help municipalities optimize the cost of impl
 
 ## Development Environment
 The following technologies and resources are used in this project
+- Java 11
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
-- [GitHub Desktop](https://desktop.github.com/)
 - [Apache Maven Build Tool](https://maven.apache.org/)
 - [Apache POI API](https://poi.apache.org/)
 - [FlatLaf Look and Feel](https://www.formdev.com/flatlaf/)
-- [JUnit 5 Framework](https://junit.org/junit5/docs/current/user-guide/)
 
 ## Software Design Architecture
 This project uses the [Model-view-controller](https://www.geeksforgeeks.org/mvc-design-pattern/) architectural pattern which is a design pattern that specifies an application consists of a data model, presentation information, and control information. The pattern requires that each of these be separated into different objects.
