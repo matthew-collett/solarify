@@ -1,15 +1,6 @@
-<img src="src/main/resources/assets/logo.svg" style="width: 250px;"/>
-
+<p align="center"><img src="src/main/resources/assets/logo.svg" style="width: 300px;"/></p>
 
 # Solarify
+Solarify is a software designed to help municipalities optimize the cost of implementing solar power in their communities. The software uses advanced algorithms to analyze energy usage data and recommend the most cost-effective solar solutions.
 
-Software to optimize the cost of implementing solar power for municipalities
-
-## Getting Started
-
-These instructions will explain how to run the project on your local machine
-
-## Usage
-
-To find the optimal solar panel/battery configuration, run `main.py` with `output.txt` as the data file in the same directory
 
