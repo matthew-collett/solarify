@@ -1,4 +1,4 @@
-# <p align="center">AEC 2023 — Atlantic Engineering Competition — Halifax, NB</p>
+# <p align="center">AEC 2023 — Atlantic Engineering Competition — Halifax, NS</p>
 
 <p align="center"><img src="src/main/resources/assets/logo.svg" style="width: 300px;"/></p>
 
